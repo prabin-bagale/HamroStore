@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamro Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="header">
+        <div class="containar">
+            <div class="navbar">
+                <div class="logo">
+                   <a href="index.html"><img src="logo.png" width="125px"></a>
+                </div>
+                <nav>
+                    <ul id="menuitems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                 <img src="cart.png" id="cart-icon" width="30px" height="30px">
+                 <img src="menu.png" class="menu-icon" onclick="menutoggle()">
+                  <!-------- ShoppingCart----->
+                    <div class="shopingcart">
+                         <h2 class="cart-title">Your Cart</h2>
+                            <div class="cart-content">
+                                <div class="cart-box">
+                                    <img src="product-1.jpg" alt="" class="cart-img">
+                                    <div class="detail-box">
+                                        <div class="cart-product-title">Red T-shirt</div>
+                                        <div class="cart-price">$35.24</div>
+                                        <input type="number" value="0" class="cart-quantity">
+                                    </div>
+                                     <i class='bx bx-trash cart-remove'></i>
+                                </div>
+                            </div>
+                                <div class="total">
+                                    <div class="total-title">Total</div>
+                                    <div class="total-price">$0</div>
+                                </div>
+                                    <button type="button" class="btn-buy">Buy Now</button>
+                                    <i class='bx bx-x' id="close-cart"></i>
+                    </div>
+                        </div>
+
+                </div>
+             <div class="row">
+                <div class="col-2">
+                    <h1>Give your Workout<br> A New Style!</h1>
+                    <p>Success is't Always about greatness.It's about being constitent.<br>Constitent Hardwork gains success.
+                    Greatness will come</p>
+                    <a href="" class="btn">Explore Now &#8594;</a>
+                </div>
+                <div class="col-2">
+                    <img src="image1.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+  <!--------Featured categories----->
+
+  <div class="categories">
+      <div class="small-containar">
+         <div class="row">
+             <div class="col-3">
+                 <img src="category-1.jpg" alt="">
+             </div>
+              <div class="col-3">
+                  <img src="category-2.jpg" alt="">
+              </div>
+             <div class="col-3">
+                  <img src="category-3.jpg" alt="">
+             </div>
+          </div>
+      </div>
+  </div>
+
+
+
+   <!--------Featured products----->
+
+   <div class="small-containar">
+       <h2 class="tittle">Featured products</h2>
+       <div class="row">
+           <div class="col-4">
+              <img src="product-1.jpg" alt="" class="productimg">
+              <h4 class="product-title">Red printed T-shirt</h4>
+              <div class="rating">
+              </div>
+              <p class="price">$50.00</p>
+              <a href="" class="btn addcart">Add to Cart</a>
+           </div>
+           <div class="col-4">
+              <img src="product-2.jpg" alt="" class="productimg">
+             <h4 class="product-title">Adidas Shoes</h4>
+              <div class="rating">
+              </div>
+              <p class="price">$50.00</p>
+              <a href="" class="btn addcart">Add to Cart</a>
+           </div>
+           <div class="col-4">
+              <img src="product-3.jpg" alt="" class="productimg">
+              <h4 class="product-title">Elastic Trouser</h4>
+              <div class="rating">
+              </div>
+              <p class="price">$50.00</p>
+              <a href="" class="btn addcart">Add to Cart</a>
+           </div>
+           <div class="col-4">
+              <img src="product-4.jpg" alt="" class="productimg">
+              <h4 class="product-title">Blue printed T-shirt</h4>
+              <div class="rating">
+              </div>
+              <p class="price">$50.00</p>
+              <a href="" class="btn addcart">Add to Cart</a>
+           </div>
+        </div>
+        <h2 class="tittle">Latest products</h2>
+       <div class="row">
+          <div class="col-4">
+              <img src="product-5.jpg" alt="" class="productimg">
+              <h4 class="product-title">Nike jordan</h4>
+              <div class="rating">
+              </div>
+             <p class="price">$50.00</p>
+             <a href="" class="btn addcart">Add to Cart</a>
+           </div>
+           <div class="col-4">
+             <img src="product-6.jpg" alt="" class="productimg">
+             <h4 class="product-title">Puma printed T-shirt</h4>
+             <div class="rating">
+             </div>
+              <p class="price">$50.00</p>
+              <a href="" class="btn addcart">Add to Cart</a>
+            </div>
+            <div class="col-4">
+                <img src="product-7.jpg" alt="" class="productimg">
+               <h4 class="product-title">Sports Shocks</h4>
+               <div class="rating">
+               </div>
+               <p class="price">$50.00</p>
+               <a href="" class="btn addcart">Add to Cart</a>
+           </div>
+            <div class="col-4">
+                <img src="product-8.jpg" alt="" class="productimg">
+                <h4 class="product-title">Rado Watch</h4>
+               <div class="rating">
+               </div>
+               <p class="price">$50.00</p>
+               <a href="" class="btn addcart">Add to Cart</a>
+            </div>
+     </div>
+     <div class="row">
+        <div class="col-4">
+           <img src="product-9.jpg" alt="" class="productimg">
+           <h4 class="product-title">Gucci Watch</h4>
+           <div class="rating">
+           </div>
+           <p class="price">$50.00</p>
+           <a href="" class="btn addcart">Add to Cart</a>
+        </div>
+        <div class="col-4">
+           <img src="product-10.jpg" alt="" class="productimg">
+          <h4 class="product-title">Black Sport</h4>
+           <div class="rating">
+           </div>
+           <p class="price">$50.00</p>
+           <a href="" class="btn addcart">Add to Cart</a>
+        </div>
+        <div class="col-4">
+           <img src="product-11.jpg" alt="" class="productimg">
+           <h4 class="product-title">chaco Skoes</h4>
+           <div class="rating">
+           </div>
+           <p class="price">$50.00</p>
+           <a href="" class="btn addcart">Add to Cart</a>
+        </div>
+        <div class="col-4">
+           <img src="product-12.jpg" alt="" class="productimg">
+           <h4 class="product-title">Black trouser</h4>
+           <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+           </div>
+           <p class="price">$50.00</p>
+           <a href="" class="btn addcart">Add to Cart</a>
+        </div>
+     </div>
+    </div> 
+
+
+<!----------offer------>
+
+<div class="offer">
+    <div class="small-containar">
+        <div class="row">
+            <div class="col-2">
+                <img src="exclusive.png" class="offer-img" >
+            </div>
+            <div class="col-2">
+                <p>Exclusively Available on RedStore</p>
+                <h1>Smart Band 4</h1>
+                <small>The Mi Smart Band 4 Features a 39.9% larger (than Mi 3 band) Amoled color fully-touch display 
+                with adjustable brightness,so everything is clear as can be.</small>
+                <br>
+             <a href="" class="btn">Buy Now &#8594;</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--------- testimonial----->
+
+<div class="testimonial">
+    <div class="small-containar">
+        <div class="row">
+            <div class="col-3">
+                <p>Loerm is simply dumy text of yhe printing and typesetting industry.
+                    lorem Ipsum has been the industry's standard dummy text ever.
+                </p>
+                  <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                   <img src="user-1.png">
+                   <h3>Angela parker</h3>
+            </div>
+                <div class="col-3">
+                    <p>Loerm is simply dumy text of yhe printing and typesetting industry.
+                        lorem Ipsum has been the industry's standard dummy text ever.
+                    </p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                       </div>
+                       <img src="user-2.png">
+                       <h3>John moxley</h3>
+                    </div>
+                    <div class="col-3">
+                        <p>Loerm is simply dumy text of yhe printing and typesetting industry.
+                            lorem Ipsum has been the industry's standard dummy text ever.
+                        </p>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                           </div>
+                           <img src="user-3.png">
+                           <h3>Summer Rai</h3>
+                        </div>
+        </div>
+    </div>
+</div>
+<!--------- Brands ----->
+
+<div class="brands">
+    <div class="small-containar">
+        <div class="row">
+            <div class="col-5">
+                <img src="logo-godrej.png" alt="">
+            </div>
+            <div class="col-5">
+                <img src="logo-oppo.png" alt="">
+            </div>
+            <div class="col-5">
+                <img src="logo-coca-cola.png" alt="">
+            </div>
+            <div class="col-5">
+                <img src="logo-paypal.png" alt="">
+            </div>
+            <div class="col-5">
+                <img src="logo-philips.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--------- footer ----->
+
+<div class="footer">
+    <div class="containar">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download our App</h3>
+                <p>Download App for Andriod and ios  mobile phone.</p>
+                <div class="App-logo">
+                    <img src="play-store.png">
+                    <img src="app-store.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="logo-white.png" alt="">
+                <p>Our purpose is to sustainably make the pleasure and <br>benefit of Sports Accessible
+                    to the many
+                </p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2022</p>
+    </div>
+</div>
+
+ <!--------js for toggle menu----->
+ <script>
+     var menuitems = document.getElementById("menuitems")
+     menuitems.style.maxHeight ="0px";
+     function menutoggle(){
+         if(menuitems.style.maxHeight =="0px")
+         {
+            menuitems.style.maxHeight ="600px";
+         }
+         else{
+            menuitems.style.maxHeight ="0px";
+         }
+     }
+ </script>
+  <script src="main.js"></script>
+</body>
+</html>

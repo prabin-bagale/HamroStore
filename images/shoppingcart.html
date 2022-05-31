@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products-Hamro Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+<body>
+        <div class="containar">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="logo.png" width="125px">
+                </div>
+                <nav>
+                    <ul id="menuitems">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Products</a></li>
+                        <li><a href="">Account</a></li>
+                    </ul>
+                </nav>
+                <img src="cart.png" id="cart-icon" width="30px" height="30px">
+                <img src="menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+
+<!-------- ShoppingCart----->
+<div class="shopingcart">
+    <h2 class="cart-title">Your Cart</h2>
+    <div class="cart-content">
+    </div>
+    <div class="total">
+        <div class="total-title">Total</div>
+        <div class="total-price">$0</div>
+    </div>
+    <button type="button" class="btn-buy">Buy Now</button>
+    <i class='bx bx-x' id="close-cart"></i>
+</div>
+    </div>
+
+
+
+<!--------- footer ----->
+
+<div class="footer">
+    <div class="containar">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download our App</h3>
+                <p>Download App for Andriod and ios  mobile phone.</p>
+                <div class="App-logo">
+                    <img src="play-store.png">
+                    <img src="app-store.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="logo-white.png" alt="">
+                <p>Our purpose is to sustainably make the pleasure and <br>benefit of Sports Accessible
+                    to the many
+                </p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2022</p>
+    </div>
+</div>
+
+ <!--------js for toggle menu----->
+ 
+ <script>
+     var menuitems = document.getElementById("menuitems")
+     menuitems.style.maxHeight ="0px";
+     function menutoggle(){
+         if(menuitems.style.maxHeight =="0px")
+         {
+            menuitems.style.maxHeight ="600px";
+         }
+         else{
+            menuitems.style.maxHeight ="0px";
+         }
+     }
+ </script>
+ <script src="main.js"></script>
+</body>
+</html>
